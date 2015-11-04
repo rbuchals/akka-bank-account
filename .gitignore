@@ -1,0 +1,12 @@
+*.class
+*.log
+
+.cache
+.history
+.settings
+.classpath
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
