@@ -1,12 +1,13 @@
 package com.capgemini.akka.bank.account.messages;
 
-import lombok.Getter;
+import lombok.Value;
 
 import java.math.BigInteger;
 
 public class BankAccount {
+
+    @Value
 	public static class Deposit {
-        @Getter
 		private final BigInteger amount;
 
 		public Deposit(BigInteger amount) {
@@ -18,8 +19,8 @@ public class BankAccount {
 
 	}
 
+    @Value
 	public static class Withdraw {
-		@Getter
         private final BigInteger amount;
 
 		public Withdraw(BigInteger amount) {

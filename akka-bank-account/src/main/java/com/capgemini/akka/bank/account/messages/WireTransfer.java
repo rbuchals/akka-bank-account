@@ -4,11 +4,13 @@ import akka.actor.ActorRef;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
+import lombok.ToString;
 
 import java.math.BigInteger;
 
 public class WireTransfer {
     @AllArgsConstructor
+    @ToString
 	public static class Transfer {
         @NonNull
         @Getter
